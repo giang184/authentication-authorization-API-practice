@@ -1,6 +1,13 @@
 <br><br>
 
 
-you did it!
+<p>you did it 1!</p>
+
+<% response = HTTParty.get('https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=' + ENV["NYT_API_KEY"]) %>
+<%= response["copyright"] %>
+
+<p>you did it 2!</p>
+<p><%= @result%></p>
+
 
 <p><%= link_to "Go back to homepage", '/' %></p>

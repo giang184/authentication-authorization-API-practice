@@ -39,12 +39,14 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'faker'
+gem 'httparty'
 
 group :development, :test do
-    gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-    gem 'rspec-rails'
-    gem 'launchy'
-    gem 'pry'
+  gem 'dotenv-rails'
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'launchy'
+  gem 'pry'
 end
 
 group :development do
